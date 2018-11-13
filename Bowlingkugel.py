@@ -2,42 +2,42 @@
 # -*- coding: utf-8 -*-
 
 """
-Programmieraufgabe:
-    Bowlingkugel (Simulationen)
-    https://www.programmieraufgaben.ch/aufgabe/bowlingkugel/sor45wf7
-
-    Die Aufgabe besteht darin, in einem 100-stöckigen Haus das Stockwerk zu
-    bestimmen, aus welchem eine Bowlingkugel den freien Fall gerade noch
-    übersteht. Sie haben für die Versuche zwei identische Kugeln zur Verfügung,
-    welche beide in Bruch gehen dürfen. Nachdem die zweite Kugel defekt ist,
-    müssen Sie das Stockwerk angeben können. Ziel ist es, möglichst wenige
-    Fallversuche durchführen zu müssen.
-    Je nach Material der Kugeln gehen diese bereits in einem unteren Stockwerk
-    oder im extremen Fall gar nicht kaputt.
-
-    Schreiben Sie ein Programm, das mit möglichst wenigen Versuchen das gesuchte
-    Stockwerk ermittelt. Legen Sie zu Beginn des Programms das Stockwerk, bei
-    welchem die beiden Kugeln zerstört werden, per Zufallszahl zwischen 1 und
-    100 fest.
-
-Vorüberlegunng:
-    Es sind nur maximal 100 Stockwerke. Der Algorithmus kann daher für
-    jedes Stockwerk ausprobiert werden, wenn nur deterministische Algorithmen
-    verwendet werden.
-    Es soll ein Algorithmus gefunden werden, der möglichst wenige Würfe
-    benötigt. Das kann auf die maximale Anzahl von Würfe oder die
-    mittlere Anzahl von Würfe bezogen sein. Bei den Versuchen wurde beides
-    zusammen reduziert.
-    Die minimale Anzahl kann auch optimiert werden. Das Minimum ist 1 und wird
-    von dem einfachen schrittweisen Ausprobieren erreicht, hier haben alle
-    anderen Algotithmen ein Minimum von 2.
-
-Author:
-    Ulrich Berntien, 2018-08-09
-
-Sprache:
-    Python 3.6.6
+Bowlingkugel (Simulationen)
+https://www.programmieraufgaben.ch/aufgabe/bowlingkugel/sor45wf7
 """
+
+# Programmieraufgabe:
+#     Die Aufgabe besteht darin, in einem 100-stöckigen Haus das Stockwerk zu
+#     bestimmen, aus welchem eine Bowlingkugel den freien Fall gerade noch
+#     übersteht. Sie haben für die Versuche zwei identische Kugeln zur Verfügung,
+#     welche beide in Bruch gehen dürfen. Nachdem die zweite Kugel defekt ist,
+#     müssen Sie das Stockwerk angeben können. Ziel ist es, möglichst wenige
+#     Fallversuche durchführen zu müssen.
+#     Je nach Material der Kugeln gehen diese bereits in einem unteren Stockwerk
+#     oder im extremen Fall gar nicht kaputt.
+#
+#     Schreiben Sie ein Programm, das mit möglichst wenigen Versuchen das gesuchte
+#     Stockwerk ermittelt. Legen Sie zu Beginn des Programms das Stockwerk, bei
+#     welchem die beiden Kugeln zerstört werden, per Zufallszahl zwischen 1 und
+#     100 fest.
+#
+# Vorüberlegunng:
+#     Es sind nur maximal 100 Stockwerke. Der Algorithmus kann daher für
+#     jedes Stockwerk ausprobiert werden, wenn nur deterministische Algorithmen
+#     verwendet werden.
+#     Es soll ein Algorithmus gefunden werden, der möglichst wenige Würfe
+#     benötigt. Das kann auf die maximale Anzahl von Würfe oder die
+#     mittlere Anzahl von Würfe bezogen sein. Bei den Versuchen wurde beides
+#     zusammen reduziert.
+#     Die minimale Anzahl kann auch optimiert werden. Das Minimum ist 1 und wird
+#     von dem einfachen schrittweisen Ausprobieren erreicht, hier haben alle
+#     anderen Algotithmen ein Minimum von 2.
+#
+# Autor, Erstellung:
+#     Ulrich Berntien, 2018-08-09
+#
+# Sprache:
+#     Python 3.6.6
 
 import math
 import statistics

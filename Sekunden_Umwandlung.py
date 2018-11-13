@@ -2,20 +2,21 @@
 # -*- coding: utf-8 -*-
 
 """
-Programmieraufgabe:
-    Sekunden-Umwandlung
-    https://www.programmieraufgaben.ch/aufgabe/sekunden-umwandlung/sxmwsks3
-
-    Schreiben Sie ein Programm, das eine Anzahl Sekunden in die Form
-    "h:mm:ss" (h = Stunden, mm = Minuten und ss = Sekunden) bringt.
-    Zum Beispiel wird die Zahl 3674 in die Zeichenkette "1:01:14" umgewandelt.
-
-Author:
-    Ulrich Berntien, 2018-08-06
-
-Sprache:
-    Python 3.6.6
+Sekunden-Umwandlung
+https://www.programmieraufgaben.ch/aufgabe/sekunden-umwandlung/sxmwsks3
 """
+
+# Programmieraufgabe:
+#     Schreiben Sie ein Programm, das eine Anzahl Sekunden in die Form
+#     "h:mm:ss" (h = Stunden, mm = Minuten und ss = Sekunden) bringt.
+#     Zum Beispiel wird die Zahl 3674 in die Zeichenkette "1:01:14" umgewandelt.
+#
+# Autor, Erstellung:
+#     Ulrich Berntien, 2018-08-06
+#
+# Sprache:
+#     Python 3.6.6
+
 
 import re
 

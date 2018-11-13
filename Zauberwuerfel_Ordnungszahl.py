@@ -2,25 +2,26 @@
 # -*- coding: utf-8 -*-
 
 """
-Programmieraufgabe:
-    Zauberwürfel Ordnungszahl
-    https://www.programmieraufgaben.ch/aufgabe/ernoe-rubiks-zauberwuerfelalgorithmen/vymwb4k7
-
-    Schreiben Sie ein Programm, das von einem Algorithmus für den Zauberwürfel
-    die Ordnugszahl ermittelt.
-        Rubiks Cube
-    Die Ordnungszahl ist diejenige Anzahl, wie oft der Algorithmus ausgeführt
-    werden muss, damit der Würfel in seinen Startzustand gelangt. Mit anderen
-    Worten: Wenn ich einen gelösten Würfel habe und immer wieder den selben
-    Algorithmus darauf anwende: Wie lange dauert es, bis der Würfel wieder
-    gelöst ist.
-
-Author:
-    Ulrich Berntien, 2018-06-08
-
-Sprache:
-    Python 3.6.6
+Zauberwürfel Ordnungszahl
+https://www.programmieraufgaben.ch/aufgabe/ernoe-rubiks-zauberwuerfelalgorithmen/vymwb4k7
 """
+
+# Programmieraufgabe:
+#     Schreiben Sie ein Programm, das von einem Algorithmus für den Zauberwürfel
+#     die Ordnugszahl ermittelt.
+#         Rubiks Cube
+#     Die Ordnungszahl ist diejenige Anzahl, wie oft der Algorithmus ausgeführt
+#     werden muss, damit der Würfel in seinen Startzustand gelangt. Mit anderen
+#     Worten: Wenn ich einen gelösten Würfel habe und immer wieder den selben
+#     Algorithmus darauf anwende: Wie lange dauert es, bis der Würfel wieder
+#     gelöst ist.
+#
+# Autor, Erstellung:
+#     Ulrich Berntien, 2018-06-08
+#
+# Sprache:
+#     Python 3.6.6
+
 
 import re
 from typing import *

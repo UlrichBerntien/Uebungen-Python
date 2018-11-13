@@ -2,31 +2,32 @@
 # -*- coding: utf-8 -*-
 
 """
-Programmieraufgabe:
-    Schnurlängen
-    https://www.programmieraufgaben.ch/aufgabe/schnurlaengen/acgo5ap7
-
-    Eine Schnur mit einer Gesamtlänge von 450 m soll in Teilstücke der Länge
-    17 m, 19m und 21 m geteilt werden. Ist das ohne Rest möglich? Die Frage
-    reduziert sich darauf, ob eine der drei Differenzen
-        450 - 17 = 433,
-        450 - 19 = 431 und
-        450 - 21 = 429
-    ohne Rest aufgeschnitten werden kann. Denn wenn dies für eine der genannten
-    drei Differenzen möglich ist, so ist es sicher auch für 450 m möglich.
-    Schreiben Sie eine Methode zerlegbar(gesamt, laenge1, laenge2, laenge3),
-    die im Wesentlichen prüft, ob eine der drei Bedingungen
-        zerlegbar(gesamt-laenge1, laenge1, laenge2, laenge3),
-        zerlegbar(gesamt-laenge2, laenge1, laenge2, laenge3) oder
-        zerlegbar(gesamt-laenge3, laenge1, laenge2, laenge3)
-    zutrifft.
-
-Author:
-    Ulrich Berntien, 2018-08-24
-
-Sprache:
-    Python 3.6.6
+Schnurlängen
+https://www.programmieraufgaben.ch/aufgabe/schnurlaengen/acgo5ap7
 """
+
+# Programmieraufgabe:
+#     Eine Schnur mit einer Gesamtlänge von 450 m soll in Teilstücke der Länge
+#     17 m, 19m und 21 m geteilt werden. Ist das ohne Rest möglich? Die Frage
+#     reduziert sich darauf, ob eine der drei Differenzen
+#         450 - 17 = 433,
+#         450 - 19 = 431 und
+#         450 - 21 = 429
+#     ohne Rest aufgeschnitten werden kann. Denn wenn dies für eine der genannten
+#     drei Differenzen möglich ist, so ist es sicher auch für 450 m möglich.
+#     Schreiben Sie eine Methode zerlegbar(gesamt, laenge1, laenge2, laenge3),
+#     die im Wesentlichen prüft, ob eine der drei Bedingungen
+#         zerlegbar(gesamt-laenge1, laenge1, laenge2, laenge3),
+#         zerlegbar(gesamt-laenge2, laenge1, laenge2, laenge3) oder
+#         zerlegbar(gesamt-laenge3, laenge1, laenge2, laenge3)
+#     zutrifft.
+#
+# Autor, Erstellung:
+#     Ulrich Berntien, 2018-08-24
+#
+# Sprache:
+#     Python 3.6.6
+
 
 from typing import *
 

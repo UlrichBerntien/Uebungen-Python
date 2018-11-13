@@ -2,32 +2,33 @@
 # -*- coding: utf-8 -*-
 
 """
-Programmieraufgabe:
-    Flaschenverteilung (Algorithmen)
-    https://www.programmieraufgaben.ch/aufgabe/flaschenverteilung-1/i9kdigw5
-
-    Familie Kurse möchte Urlaub auf der trinkwasserlosen Insel Drøgø, deren
-    Küste ringsherum sehr steil ist. Zum Glück gibt es einen Flaschenzug, mit
-    dem die Getränkeflaschen nach oben gezogen werden können.Es stehen auch
-    viele Behälter mit genügend Platz für alle Flaschen zur Verfügung, damit
-    mehrere Flaschen auf einmal transportiert werden können.
-    Bei 7 Flaschen und 2 Behältern, von denen in den einen 3 und in den anderen
-    5 Flaschen passen, gibt es genau zwei Möglichkeiten: Der kleinere Behälter
-    ist entweder ganz voll oder enthält genau 2 Flaschen. Auf 3 Behälter mit
-    Platz für genau 2, 3 und 4 Flaschen lassen sich die sieben Flaschen auf
-    genau sechs Arten verteilen.
-    Schreiben Sie ein Programm, das eine Anzahl N von Flaschen, eine Anzahl k
-    von Behältern und die k Fassungsvermögen der Behälter einliest und
-    berechnet, auf wie viele Arten die Flaschen verteilt werden können. Die
-    Flaschen sind nicht unterscheidbar, aber die Behälter sind es, auch wenn
-    sie gleich groß sind.
-
-Author:
-    Ulrich Berntien, 2018-08-14
-
-Sprache:
-    Python 3.6.6
+Flaschenverteilung (Algorithmen)
+https://www.programmieraufgaben.ch/aufgabe/flaschenverteilung-1/i9kdigw5
 """
+
+# Programmieraufgabe:
+#     Familie Kurse möchte Urlaub auf der trinkwasserlosen Insel Drøgø, deren
+#     Küste ringsherum sehr steil ist. Zum Glück gibt es einen Flaschenzug, mit
+#     dem die Getränkeflaschen nach oben gezogen werden können.Es stehen auch
+#     viele Behälter mit genügend Platz für alle Flaschen zur Verfügung, damit
+#     mehrere Flaschen auf einmal transportiert werden können.
+#     Bei 7 Flaschen und 2 Behältern, von denen in den einen 3 und in den anderen
+#     5 Flaschen passen, gibt es genau zwei Möglichkeiten: Der kleinere Behälter
+#     ist entweder ganz voll oder enthält genau 2 Flaschen. Auf 3 Behälter mit
+#     Platz für genau 2, 3 und 4 Flaschen lassen sich die sieben Flaschen auf
+#     genau sechs Arten verteilen.
+#     Schreiben Sie ein Programm, das eine Anzahl N von Flaschen, eine Anzahl k
+#     von Behältern und die k Fassungsvermögen der Behälter einliest und
+#     berechnet, auf wie viele Arten die Flaschen verteilt werden können. Die
+#     Flaschen sind nicht unterscheidbar, aber die Behälter sind es, auch wenn
+#     sie gleich groß sind.
+#
+# Autor, Erstellung:
+#     Ulrich Berntien, 2018-08-14
+#
+# Sprache:
+#     Python 3.6.6
+
 
 from typing import *
 

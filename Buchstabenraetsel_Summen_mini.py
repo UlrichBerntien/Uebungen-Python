@@ -2,34 +2,36 @@
 # -*- coding: utf-8 -*-
 
 """
-Programmieraufgabe:
-    Buchstabenrätsel Summen
-    https://www.programmieraufgaben.ch/aufgabe/buchstabenraetsel-summen/mtt2cuwo
-
-    Schreiben Sie ein Programm, das Symbolrätsel der folgenden Art (Summen)
-    löst:
-        aab + bbc = dde.
-    Dabei bedeuten gleiche Buchstaben auch immer gleiche Ziffern und
-    verschiedene Buchstaben bedeuten auch verschiedene Ziffern.
-
-Programmidee:
-
-    Sucht nach einer Lösung für die Buchtabenrätsel Summe. Es werden nicht alle
-    möglichen Lösungen gesucht, die Suche wird beim ersten Erfolg abgebrochen.
-    Gegeben ist eine Summe von Zahlen und das Ergebnis, dabei sind Ziffern durch
-    Buchstaben ersetzt. Jeder Buchstabe steht für eine andere Ziffer. Sind in
-    der Gleichung Ziffern enthalten, dann kann kein Buchstabe eine dieser Ziffern
-    sein. In den Summen und im Ergebnis können auch Ziffern vorgegeben sein.
-
-    Verwendet wird ein Backtracking-Algorithmus. Ziel ist ein kurzes Programm mit
-    dem Verzicht auf einen optimierten Lösungsalgorithmus.
-
-Author:
-    Ulrich Berntien, 2018-10-30
-
-Sprache:
-    Python 3.6.6
+Buchstabenrätsel Summen
+https://www.programmieraufgaben.ch/aufgabe/buchstabenraetsel-summen/mtt2cuwo
 """
+
+# Programmieraufgabe:
+#
+#     Schreiben Sie ein Programm, das Symbolrätsel der folgenden Art (Summen)
+#     löst:
+#         aab + bbc = dde.
+#     Dabei bedeuten gleiche Buchstaben auch immer gleiche Ziffern und
+#     verschiedene Buchstaben bedeuten auch verschiedene Ziffern.
+#
+# Programmidee:
+#
+#     Sucht nach einer Lösung für die Buchtabenrätsel Summe. Es werden nicht alle
+#     möglichen Lösungen gesucht, die Suche wird beim ersten Erfolg abgebrochen.
+#     Gegeben ist eine Summe von Zahlen und das Ergebnis, dabei sind Ziffern durch
+#     Buchstaben ersetzt. Jeder Buchstabe steht für eine andere Ziffer. Sind in
+#     der Gleichung Ziffern enthalten, dann kann kein Buchstabe eine dieser Ziffern
+#     sein. In den Summen und im Ergebnis können auch Ziffern vorgegeben sein.
+#
+#     Verwendet wird ein Backtracking-Algorithmus. Ziel ist ein kurzes Programm mit
+#     dem Verzicht auf einen optimierten Lösungsalgorithmus.
+#
+# Autor, Erstellung:
+#     Ulrich Berntien, 2018-10-30
+#
+# Sprache:
+#     Python 3.6.6
+
 
 from typing import *
 

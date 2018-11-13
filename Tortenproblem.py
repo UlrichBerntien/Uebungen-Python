@@ -2,28 +2,29 @@
 # -*- coding: utf-8 -*-
 
 """
-Programmieraufgabe:
-    Tortenproblem
-    https://www.programmieraufgaben.ch/aufgabe/das-tortenproblem/8ijpjc7u
-
-    k Kinder erhalten t Torten.
-
-    Die Torten sind alle gleich groß, haben aber verschiedene
-    Geschmacksrichtungen. Die Torten werden zunächst je in k Stücke geteilt.
-    Nun erhält jedes Kind von jeder Torte ein Stück.
-    Danach beginnen die Kinder zu tauschen, denn vielleicht mögen nicht alle
-    jede Sorte gleich gut. Beim Tauschen achten die Kinder darauf, dass immer
-    jedes Kind gleich viele Tortenstücke behält.
-    Auf wie viele Arten können die Kinder die Tortenstücke nun so verteilen,
-    dass immer noch alle Kinder gleich viele Stücke haben?
-    Alle Möglichkeiten sind auszugeben.
-
-Author:
-    Ulrich Berntien, 2018-11-06
-
-Sprache:
-    Python 3.6.6
+Tortenproblem
+https://www.programmieraufgaben.ch/aufgabe/das-tortenproblem/8ijpjc7u
 """
+
+# Programmieraufgabe:
+#     k Kinder erhalten t Torten.
+#
+#     Die Torten sind alle gleich groß, haben aber verschiedene
+#     Geschmacksrichtungen. Die Torten werden zunächst je in k Stücke geteilt.
+#     Nun erhält jedes Kind von jeder Torte ein Stück.
+#     Danach beginnen die Kinder zu tauschen, denn vielleicht mögen nicht alle
+#     jede Sorte gleich gut. Beim Tauschen achten die Kinder darauf, dass immer
+#     jedes Kind gleich viele Tortenstücke behält.
+#     Auf wie viele Arten können die Kinder die Tortenstücke nun so verteilen,
+#     dass immer noch alle Kinder gleich viele Stücke haben?
+#     Alle Möglichkeiten sind auszugeben.
+#
+# Autor, Erstellung:
+#     Ulrich Berntien, 2018-11-06
+#
+# Sprache:
+#     Python 3.6.6
+
 
 from typing import *
 
@@ -153,7 +154,7 @@ def tortenproblem(torten: int, kinder: int) -> None:
     assert torten > 0
     assert kinder > 0
     print("Kinder:", kinder, "Torten:", torten)
-    print("Ausgabe in jeder Zeile: Kind 1|Kinde 2|....")
+    print("Ausgabe in jeder Zeile: Kind 1|Kind 2|....")
     print("Ausgabe für jedes Kind: Anzahl von Torte 1, Anzahl von Torte 2, ...")
     anzahl: int = 0
     # Die Anzahl der Stücke von jeder Torte ist gleich der Anzahl der Kinder.

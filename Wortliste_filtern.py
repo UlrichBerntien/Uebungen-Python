@@ -2,28 +2,29 @@
 # -*- coding: utf-8 -*-
 
 """
-Programmieraufgabe:
-    Wortliste filtern
-    https://www.programmieraufgaben.ch/aufgabe/wortliste-filtern/pomdoige
-
-    Für die Erstellung eines Lernprogramms zum Maschinenschreiben werden
-    geeignete Wörter aus einer Wortliste herausgepickt. Dafür wird die folgende
-    Funktion benötigt:
-        passt(wort: string, darf: string, muss: string): boolean
-    Dabei dürfen im String wort nur Buchstaben vorkommen, die auch im String
-    darf enthalten sind. Jedoch muss der String wort alle Buchstaben enthalten,
-    welche im String muss vorkommen. Beispiele:
-        passt("apfelsaft", "asdfghjklö", "as") // liefert false: p nicht ok
-        passt("sdd",       "asdfghjklö", "as") // liefert false: a fehlt
-        passt("saft",      "asdfghjklö", "as") // liefert false: t nicht ok
-        passt("lasag",     "asdfghjklö", "as") // liefert true
-
-Author:
-    Ulrich Berntien, 2018-07-03
-
-Sprache:
-    Python 3.6.6
+Wortliste filtern
+https://www.programmieraufgaben.ch/aufgabe/wortliste-filtern/pomdoige
 """
+
+# Programmieraufgabe:
+#     Für die Erstellung eines Lernprogramms zum Maschinenschreiben werden
+#     geeignete Wörter aus einer Wortliste herausgepickt. Dafür wird die folgende
+#     Funktion benötigt:
+#         passt(wort: string, darf: string, muss: string): boolean
+#     Dabei dürfen im String wort nur Buchstaben vorkommen, die auch im String
+#     darf enthalten sind. Jedoch muss der String wort alle Buchstaben enthalten,
+#     welche im String muss vorkommen. Beispiele:
+#         passt("apfelsaft", "asdfghjklö", "as") // liefert false: p nicht ok
+#         passt("sdd",       "asdfghjklö", "as") // liefert false: a fehlt
+#         passt("saft",      "asdfghjklö", "as") // liefert false: t nicht ok
+#         passt("lasag",     "asdfghjklö", "as") // liefert true
+#
+# Autor, Erstellung:
+#     Ulrich Berntien, 2018-07-03
+#
+# Sprache:
+#     Python 3.6.6
+
 
 import sys
 import zipfile

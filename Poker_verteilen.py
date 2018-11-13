@@ -2,36 +2,37 @@
 # -*- coding: utf-8 -*-
 
 """
-Programmieraufgabe:
-    Poker verteilen
-    https://www.programmieraufgaben.ch/aufgabe/poker-verteilen/i4si4ts5
-
-    Schreiben Sie ein Programm, das vier Spielerinnen je fünf Pokerkarten verteilt.
-    Dabei ist ein Array zunächst mit den Zahlen 1 bis 55 zu füllen. Am einfachsten
-    verwenden Sie dazu die Indizes 1 bis 55. 1-13 entspricht den Herz-Karten,
-    14-26 sind die Pik-Karten, danach folgen 13 Karo- und zuletzt die Kreuz-Karten.
-    Die Nummern 53, 54 und 55 sind die drei Joker-Karten. Die erste bis und mit
-    die zehnte Karte pro Farbe sind jeweils die Zahl-Karten, die elfte entspricht
-    dem Jungen (J), die zwölfte der Queen (Q = Dame) und die dreizehnte. ist der
-    König (K).
-    Mischen Sie den Array nach folgendem Algorithmus (D. Knuth: The Art of
-    Computer Programming Vol. 2; ISBN 0-201-89684-2; Addison-Wesley; S. 145
-    Shuffling) und verteilen Sie die ersten 20 Karten reihum an vier Spielende.
-    Misch-Algorithmus:
-        mischenAbPos := 1
-        while(mischenAbPos < 55)
-        {
-          zufallsPos   := zufällige Position aus den Zahlen [mischenAbPos bis 55]
-          vertausche die Elemente "array[mischenAbPos]" mit "array[zufallsPos]"
-          mischenAbPos := mischenAbPos + 1
-        }
-
-Author:
-    Ulrich Berntien, 2018-08-31
-
-Sprache:
-    Python 3.6.6
+Poker verteilen
+https://www.programmieraufgaben.ch/aufgabe/poker-verteilen/i4si4ts5
 """
+
+# Programmieraufgabe:
+#     Schreiben Sie ein Programm, das vier Spielerinnen je fünf Pokerkarten verteilt.
+#     Dabei ist ein Array zunächst mit den Zahlen 1 bis 55 zu füllen. Am einfachsten
+#     verwenden Sie dazu die Indizes 1 bis 55. 1-13 entspricht den Herz-Karten,
+#     14-26 sind die Pik-Karten, danach folgen 13 Karo- und zuletzt die Kreuz-Karten.
+#     Die Nummern 53, 54 und 55 sind die drei Joker-Karten. Die erste bis und mit
+#     die zehnte Karte pro Farbe sind jeweils die Zahl-Karten, die elfte entspricht
+#     dem Jungen (J), die zwölfte der Queen (Q = Dame) und die dreizehnte. ist der
+#     König (K).
+#     Mischen Sie den Array nach folgendem Algorithmus (D. Knuth: The Art of
+#     Computer Programming Vol. 2; ISBN 0-201-89684-2; Addison-Wesley; S. 145
+#     Shuffling) und verteilen Sie die ersten 20 Karten reihum an vier Spielende.
+#     Misch-Algorithmus:
+#         mischenAbPos := 1
+#         while(mischenAbPos < 55)
+#         {
+#           zufallsPos   := zufällige Position aus den Zahlen [mischenAbPos bis 55]
+#           vertausche die Elemente "array[mischenAbPos]" mit "array[zufallsPos]"
+#           mischenAbPos := mischenAbPos + 1
+#         }
+#
+# Autor, Erstellung:
+#     Ulrich Berntien, 2018-08-31
+#
+# Sprache:
+#     Python 3.6.6
+
 
 from typing import *
 import random
